@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methods and Loops</title>
+</head>
+<body>
+  <h1>Methods And Loops</h1>
+  <p id="random-numbers"></p>
+  <p id="current-date"></p>
+  <p id="rounded-number"></p>
+  <p id="switch-message"></p>
+
+  <script>
+
+    let numbers = "";
+    for (let i = 0; i < 5; i++) {
+      numbers += Math.floor(Math.random() * 100) + " ";
+    }
+    document.getElementById("random-numbers").innerText = "Random Numbers: " + numbers;
+
+    const currentDate = new Date();
+    document.getElementById("current-date").innerText = "Current Date: " + currentDate.toDateString();
+
+    let randomFloat = Math.random() * 100;
+    let rounded = Math.round(randomFloat);
+    document.getElementById("rounded-number").innerText = "Rounded Random Number: " + rounded;
+
+    document.getElementById("switch-message").innerText = message;
+  </script>
+</body>
+</html>
